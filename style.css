@@ -192,7 +192,7 @@ button span {
     background-position: top;
 }
 
-.product__block {
+.product-block {
     position: relative;
     display:flex; 
     flex-direction: row;
@@ -201,12 +201,12 @@ button span {
     margin: 80px 0;
 }
 
-.product__img {
+.product-block__img {
     position: relative;
     max-width: 40%;
 }
 
-.product__content {
+.product-block__content {
     position: relative;
     right: 0;
     display: flex;
@@ -216,8 +216,73 @@ button span {
     max-width: 50%;
 }
 
-.product__content p {
+.product-block__content p {
     margin-top: 52px;
     margin-bottom: 65px;
     color: #fff;
+}
+
+.statistics {
+    background-color: #303030;
+    min-height: 700px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+}
+
+.statistics-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0 190px 0;
+}
+
+.statistics-block p {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.circles {
+    width: 100%;
+    min-height: 235px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circles__item {
+    min-width: 235px;
+    min-height: 235px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.circles__number {
+    font-family: 'Montserrat';
+    font-size: 50.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffc200;
+}
+
+.circles__word {
+    font-family: 'Montserrat';
+    font-size: 28.9px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
 }
