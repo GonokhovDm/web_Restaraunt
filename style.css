@@ -222,6 +222,15 @@ button span {
     color: #fff;
 }
 
+.product.bottom {
+    transform: rotate(180deg);
+    margin-bottom: 115px;
+}
+
+.revers {
+    transform: rotate(180deg);
+}
+
 .statistics {
     background-color: #303030;
     min-height: 700px;
