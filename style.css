@@ -1,149 +1,39 @@
-@import "css/components/header.css";
-
-/*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
-
-/* HEADER */
-
-.header {
-    min-height: 796px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-
+.cards-title {
+	margin-top: 120px;
+	text-align: center;
 }
 
-/* .header__background {
-    width: 100%;
-    background-size: contain;
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: -3;
-} */
-
-.header__content {
-    position: relative;
-    height: 700px;
-    margin-top: 100px;
-    margin-right: 5%;
-    margin-left: 50%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.cards-paragraph {
+	margin-top: 40px;
+	text-align: center;
 }
 
-.header__content h1 {
-    font-family: Grand Hotel;
-    font-size: 124.7px;
-    font-weight: 400;
-    color: #ffc200;
-    margin-bottom: 45px;
+.cards {
+	margin-top: 78px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
 }
 
-.header__content p {
-    font-family: Montserrat;
-    font-size: 29.8px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 50px;
+.cards__item {
+	width: 33.333%;
+	max-width: 260px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.header__button {
-    padding: 15px 65px;
-    background: #ffc200;
-    border-radius: 4px;
+.cards__item h4 {
+	margin-top: 15px;
+	text-align: center;
 }
 
-.header__button span {
-    font-family: Montserrat;
-    font-size: 19.3px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #333333;
+.cards__item p {
+	margin-top: 25px;
+	font-size: 16.9px;
+	text-align: center;
 }
 
-/* NAVBAR */
-
-.navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    padding: 40px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    position: relative;
-    min-width: 185px;
-    min-height: 42px;
-}
-
-.menu {
-    position: relative;
-    display: inline-block;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.menu__link {
-    font-family: Montserrat;
-    font-size: 25px;
-    line-height: 1.2;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin-right: 45px;
-}
-
-.menu ul li:last-child {
-    margin-right: 0;
-}
+.cards__img {
+	max-width: 260px;
