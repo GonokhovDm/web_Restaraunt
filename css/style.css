@@ -38,6 +38,10 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+body._lock {
+	overflow: hidden;
+}
+
 h1 {
     font-family: 'Grand Hotel';
     font-size: 124.7px;
@@ -101,7 +105,7 @@ button span {
 
 /* HEADER */
 
-.header {
+.home {
     min-height: 796px;
     overflow: hidden;
     background-size: cover;
@@ -109,7 +113,7 @@ button span {
 
 }
 
-.header__content {
+.home__content {
     position: relative;
     height: 630px;
     margin-top: 100px;
@@ -121,11 +125,11 @@ button span {
     align-items: flex-start;
 }
 
-.header__content h1 {
+.home__content h1 {
     margin-bottom: 45px;
 }
 
-.header__content p {
+.home__content p {
     font-family: Montserrat;
     font-size: 29.8px;
     line-height: 1.2;
@@ -137,19 +141,23 @@ button span {
 /* NAVBAR */
 
 .navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
+    position: fixed;
+	 width: 100%;
+	 top: 0;
+	 margin: 0 auto;
     padding: 40px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+	 background-color: rgba(0, 0, 0, 0.8);
+	 z-index: 10;
 }
 
 .logo {
     position: relative;
     min-width: 185px;
     min-height: 42px;
+	 z-index: 11;
 }
 
 .menu {
@@ -178,30 +186,34 @@ button span {
     margin-right: 0;
 }
 
+.menu__icon {
+	display: none;
+}
+
 /* CARDS */
 
-#cards {
+.product {
 	margin-bottom: 200px;
 }
 
-.cards-title {
+.product-title {
 	margin-top: 120px;
 	text-align: center;
 }
 
-.cards-paragraph {
+.product-paragraph {
 	margin-top: 40px;
 	text-align: center;
 }
 
-.cards {
+.product__block {
 	margin-top: 78px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
 
-.cards__item {
+.product__item {
 	width: 33.333%;
 	max-width: 260px;
 	position: relative;
@@ -210,18 +222,18 @@ button span {
 	align-items: center;
 }
 
-.cards__item h4 {
+.product__item h4 {
 	margin-top: 15px;
 	text-align: center;
 }
 
-.cards__item p {
+.product__item p {
 	margin-top: 25px;
 	font-size: 16.9px;
 	text-align: center;
 }
 
-.cards__img {
+.product__img {
 	max-width: 260px;
 }
 
@@ -232,14 +244,14 @@ button span {
     /* margin-top: 150px; */
 }
 
-.product {
+.promo {
     min-height: 630px;
     overflow: hidden;
     background-size: cover;
     background-position: top;
 }
 
-.product-block {
+.promo-block {
     position: relative;
     display:flex; 
     flex-direction: row;
@@ -248,12 +260,12 @@ button span {
     margin: 80px 0;
 }
 
-.product-block__img {
+.promo-block__img {
     position: relative;
     max-width: 40%;
 }
 
-.product-block__content {
+.promo-block__content {
     position: relative;
     right: 0;
     display: flex;
@@ -263,13 +275,13 @@ button span {
     max-width: 50%;
 }
 
-.product-block__content p {
+.promo-block__content p {
     margin-top: 52px;
     margin-bottom: 65px;
     color: #fff;
 }
 
-.product.bottom {
+.promo.bottom {
     transform: rotate(180deg);
     margin-bottom: 115px;
 }
@@ -345,7 +357,7 @@ button span {
     margin-top: 10px;
 }
 
-.description-img {
+.about-img {
     width: 100%;
     min-height: 796px;
     background-image: url(/source/img/photo_back.jpg);
@@ -360,7 +372,7 @@ button span {
     background: rgba(255, 224, 123, 0.801);
 }
 
-.description-block {
+.about-block {
     min-height: 796px;
     position: relative;
     display: flex;
@@ -369,12 +381,12 @@ button span {
     text-align: center;
 }
 
-.description-block p {
+.about-block p {
     font-size: 44.9px;
     margin-bottom: 51px;
 }
 
-.subscribe-block {
+.contact-block {
     width: 90%;
     min-height: 796px;
     margin: auto;
@@ -384,17 +396,17 @@ button span {
     text-align: center;
 }
 
-.subscribe-block h2 {
+.contact-block h2 {
     color: #303030;
 }
 
-.subscribe-block p {
+.contact-block p {
     font-size: 29.8px;
     margin-top: 56px;
     margin-bottom: 84px;
 }
 
-.subscribe-block__form {
+.contact-block__form {
     max-width: 770px;
     height: 65px;
     margin: auto;
@@ -402,7 +414,7 @@ button span {
 
 }
 
-.subscribe-block__input {
+.contact-block__input {
     font-family: Montserrat;
     font-size: 25px;
     color: #333333;
@@ -414,7 +426,7 @@ button span {
     border-radius: 4px 0px 0px 4px;
 }
 
-.subscribe-block__button {
+.contact-block__button {
     font-family: Montserrat;
     font-size: 25px;
     font-weight: 700;
