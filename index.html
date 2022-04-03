@@ -12,35 +12,275 @@
 	<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap"
 		rel="stylesheet">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/meta.css">
 </head>
 
 <body>
-	<section id="cards">
-		<div class="container">
-			<h3 class="cards-title">Best Seller</h3>
-			<p class="cards-paragraph">
+	<!-- Header -->
+	<header id="header" class="home" style="background-image: url(source/img/header_background.jpg);">
+		<div class="home__content">
+			<h1>
+				Title here
+			</h1>
+			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
 			</p>
-			<div class="cards">
-				<div class="cards__item">
-					<img src="source/img/card_1.png" alt="" class="cards__img">
-					<h4>Title Here</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<button class="home__button">
+				<span>order now</span>
+			</button>
+		</div>
+
+		<!-- Navbar -->
+		<nav class="navbar">
+			<a href="#" class="logo">
+				<img src="source/img/logo.png" alt="">
+			</a>
+			<div class="menu">
+				<ul class="menu__item">
+					<li>
+						<a data-goto=".home" href="#" class="menu__link">Home</a>
+					</li>
+					<li>
+						<a data-goto=".product" href="#" class="menu__link">Product</a>
+					</li>
+					<li>
+						<a data-goto=".content" href="#" class="menu__link">Promo</a>
+					</li>
+					<li>
+						<a data-goto=".about-block" href="#" class="menu__link">About</a>
+					</li>
+					<li>
+						<a data-goto=".contact" href="#" class="menu__link">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu__icon">
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<!-- Product -->
+		<section class="product">
+			<div class="container">
+				<h3 class="product-title">Best Seller</h3>
+				<p class="product-paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+					vestibulum.
+				</p>
+				<div class="product__block">
+					<div class="product__item">
+						<img src="source/img/card_1.png" alt="" class="product__img">
+						<h4>Title Here</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="product__item">
+						<img src="source/img/card_2.png" alt="" class="product__img">
+						<h4>Title Here</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="product__item">
+						<img src="source/img/card_3.png" alt="" class="product__img">
+						<h4>Title Here</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
 				</div>
-				<div class="cards__item">
-					<img src="source/img/card_2.png" alt="" class="cards__img">
-					<h4>Title Here</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		</section>
+
+		<!-- Promo -->
+		<section id="main" class="content">
+			<!-- top block -->
+			<div class="promo" style="background-image: url(/source/img/vector_back_1.png);">
+				<div class="container">
+					<div class="promo-block">
+						<img src="source/img/card_4.png" alt="" class="promo-block__img">
+						<div class="promo-block__content">
+							<h2>Oriental Taste</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+								vestibulum.</p>
+							<button>
+								<span>Order Now</span>
+							</button>
+						</div>
+					</div>
 				</div>
-				<div class="cards__item">
-					<img src="source/img/card_3.png" alt="" class="cards__img">
-					<h4>Title Here</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+
+			<!-- middle block -->
+			<div class="statistics" style="background-image: url(/source/img/vecror_back_2.png);">
+				<div class="container">
+					<div class="statistics-block">
+						<h2>Statistics</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+							vestibulum.</p>
+						<div class="circles">
+							<div class="circles__item">
+								<span class="circles__number">123</span>
+								<span class="circles__word">Outlets</span>
+							</div>
+							<div class="circles__item">
+								<span class="circles__number">100</span>
+								<span class="circles__word">Chef</span>
+							</div>
+							<div class="circles__item">
+								<span class="circles__number">300</span>
+								<span class="circles__word">Menu</span>
+							</div>
+							<div class="circles__item">
+								<span class="circles__number">30</span>
+								<span class="circles__word">Country</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- bottom block -->
+			<div class="promo bottom" style="background-image: url(/source/img/vector_back_1.png);">
+				<div class="container">
+					<div class="promo-block">
+						<img src="source/img/card_5.png" alt="" class="promo-block__img revers">
+						<div class="promo-block__content revers">
+							<h2>Chicken Grill</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+								vestibulum.</p>
+							<button>
+								<span>Order Now</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About block with multiply pictures -->
+
+		<!-- photo -->
+		<div class="about-img">
+			<!-- yellow-color opacity mask -->
+			<div class="overlay-img">
+				<div class="container">
+					<div class="about-block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+							vestibulum.</p>
+						<h3>Lenora Fields</h3>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+
+		<!-- Contact -->
+		<div class="contact" style="background-image: url(/source/img/vecror_back_2.png);">
+			<div class="container">
+				<div class="contact-block">
+					<h2>Subscribe</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+						vestibulum.</p>
+					<form action="#" method="get">
+						<div class="contact-block__form">
+							<input type="text" name="e-mail" placeholder="Email" value="" class="contact-block__input">
+							<button class="contact-block__button">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="footer">
+		<div class="footer__content">
+			<!-- left side -->
+			<div class="contacts">
+				<span class="contacts__title">Title here</span>
+				<p class="contacts__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim
+					nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+				<div class="contacts__links">
+					<a href="#" class="contacts__links-item">
+						<img src="/source/img/instagram_icon.png" alt="">
+					</a>
+					<a href="#" class="contacts__links-item">
+						<img src="/source/img/facebook_icon.png" alt="">
+					</a>
+					<a href="#" class="contacts__links-item">
+						<img src="/source/img/twitter_icon.png" alt="">
+					</a>
+					<a href="#" class="contacts__links-item">
+						<img src="/source/img/whatsapp_icon.png" alt="">
+					</a>
+				</div>
+			</div>
+
+			<!-- right side -->
+			<div class="info">
+				<!-- about -->
+				<div class="info__menu">
+					<span class="info__title">About</span>
+					<ul>
+						<li>
+							<a href="#" class="info__link">History</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Our team</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Brand Guidelines</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Terms & Condition</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- services -->
+				<div class="info__menu">
+					<span class="info__title">Services</span>
+					<ul>
+						<li>
+							<a href="#" class="info__link">How to Order</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Our Product</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Order Status</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Promo</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Payment Method</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- other -->
+				<div class="info__menu">
+					<span class="info__title">Other</span>
+					<ul>
+						<li>
+							<a href="#" class="info__link">Contact Us</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Help</a>
+						</li>
+						<li>
+							<a href="#" class="info__link">Privacy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/script.js"></script>
 </body>
 
 </html>
