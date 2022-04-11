@@ -268,8 +268,12 @@ button span {
     margin: 80px 0;
 }
 
+._desktop {
+    display: flex !important;
+}
+
 ._mobile {
-    display: none;
+    display: none !important;
 }
 
 .promo-block__img {
@@ -524,7 +528,7 @@ button span {
 }
 
 .info__menu ul li {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .info__menu ul li:last-child {

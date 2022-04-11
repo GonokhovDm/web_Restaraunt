@@ -213,11 +213,11 @@
 
 	/* Content */
 	._desktop {
-		display: none;
+		display: none !important;
 	}
 
 	._mobile {
-		display: block;
+		display: block !important;
 		text-align: center;
 	}
 
@@ -307,5 +307,33 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	/* Footer mobile */
+	.footer__content {
+		width: 100%;
+		flex-direction: column;	
+		text-align: center;	
+	}
+
+	.contacts {
+		width: 100%;
+	}
+
+	.contacts__title {
+		width: 100%;
+		text-align: center;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.info__menu {
+		margin-right: 0;
+		margin-bottom: 35px;
 	}
 }
