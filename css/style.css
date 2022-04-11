@@ -38,9 +38,14 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+body {
+    overflow-x: hidden;
+}
+
 body._lock {
 	overflow: hidden;
 }
+
 
 h1 {
     font-family: 'Grand Hotel';
@@ -142,22 +147,25 @@ button span {
 
 .navbar {
     position: fixed;
-	 width: 100%;
-	 top: 0;
-	 margin: 0 auto;
-    padding: 40px 60px;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-	 background-color: rgba(0, 0, 0, 0.8);
-	 z-index: 10;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 10;
 }
 
 .logo {
     position: relative;
-    min-width: 185px;
-    min-height: 42px;
-	 z-index: 11;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    max-width: 100%;
+    /* max-height: 42px; */
+	z-index: 11;
 }
 
 .menu {
@@ -260,6 +268,14 @@ button span {
     margin: 80px 0;
 }
 
+._desktop {
+    display: flex !important;
+}
+
+._mobile {
+    display: none !important;
+}
+
 .promo-block__img {
     position: relative;
     max-width: 40%;
@@ -267,7 +283,6 @@ button span {
 
 .promo-block__content {
     position: relative;
-    right: 0;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -286,7 +301,7 @@ button span {
     margin-bottom: 115px;
 }
 
-.revers {
+._revers {
     transform: rotate(180deg);
 }
 
@@ -319,18 +334,20 @@ button span {
 
 .circles {
     width: 100%;
-    min-height: 235px;
+    min-height: 220px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    align-content: center;
+	justify-content: center;
 }
 
 .circles__item {
-    min-width: 235px;
-    min-height: 235px;
-    margin-bottom: 40px;
+    width: 220px;
+    height: 220px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +377,7 @@ button span {
 .about-img {
     width: 100%;
     min-height: 796px;
-    background-image: url(/source/img/photo_back.jpg);
+    background-image: url(source/img/photo_back.jpg);
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -411,7 +428,6 @@ button span {
     height: 65px;
     margin: auto;
     display: flex;
-
 }
 
 .contact-block__input {
@@ -512,7 +528,7 @@ button span {
 }
 
 .info__menu ul li {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .info__menu ul li:last-child {
