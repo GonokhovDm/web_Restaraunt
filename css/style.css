@@ -377,7 +377,7 @@ button span {
 .about-img {
     width: 100%;
     min-height: 796px;
-    background-image: url(/source/img/photo_back.jpg);
+    background-image: url(source/img/photo_back.jpg);
     overflow: hidden;
     background-size: cover;
     background-position: center;
