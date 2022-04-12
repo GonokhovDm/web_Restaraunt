@@ -43,6 +43,24 @@
 	.product__img {
 		max-width: 90%;
 	}
+
+	.contacts__title {
+		font-size: 18px;
+		margin-bottom: 28px;
+	}
+
+	.contacts__paragraph {
+		font-size: 16px;
+		margin-bottom: 28px;
+	}
+
+	.info__title {
+		font-size: 18px;
+	}
+
+	.info__link {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 800px) {
