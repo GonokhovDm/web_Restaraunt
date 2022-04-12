@@ -183,6 +183,31 @@ button span {
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.menu__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width .5s ease 0s;
+}
+
+.menu__link:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffc200;
+    transition: width .5s ease 0s;
 }
 
 .menu ul li {
@@ -540,6 +565,7 @@ button span {
     font-size: 25px;
     line-height: 1.2;
     font-weight: 700;
+    position: relative;
     text-transform: uppercase;
     color: #fff;
 }
@@ -549,4 +575,29 @@ button span {
     font-size: 23.6px;
     font-weight: 400;
     color: #ffffff;
+    position: relative;
+}
+
+.info__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width .5s ease 0s;
+}
+
+.info__link:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffc200;
+    transition: width .5s ease 0s;
 }
